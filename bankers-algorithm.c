@@ -17,15 +17,15 @@ void bankers()
                 	flag=0;
                 	if(finish[i]==0)
                 	{
-                        	for(j=0;j<rn;j++)                                               //check need for each processes
+                        	for(j=0;j<rn;j++)
                         	{
-                                	if(need[i][j] > avail[j])                                       //can't execute
+                                	if(need[i][j] > avail[j])
                                 	{
                                         	flag=1;
                                         	break;
                                 	}
                         	}
-                        	if(flag==0)                                                     //can execute
+                        	if(flag==0)
                         	{
                                 	finish[i]=1;
                                 	safeseq[k]=i;
